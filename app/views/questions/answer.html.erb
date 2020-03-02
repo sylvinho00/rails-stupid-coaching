@@ -1,0 +1,10 @@
+<h1>Questions#answer</h1>
+
+<% if @infos[:no_info] %>
+  No question
+<% else %>
+  Question : <%= @infos[:question] %><br>
+  Answer : <%= @infos[:answer] %>
+<% end %>
+<br>
+<%= link_to 'Other question', ask_path %>
